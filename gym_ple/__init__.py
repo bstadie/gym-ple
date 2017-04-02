@@ -2,7 +2,8 @@ from gym.envs.registration import registry, register, make, spec
 from gym_ple.ple_env import PLEEnv
 # Pygame
 # ----------------------------------------
-for game in ['Catcher', 'MonsterKong', 'FlappyBird', 'PixelCopter', 'PuckWorld', 'RaycastMaze', 'Snake', 'WaterWorld']:
+for game in ['Catcher', 'MonsterKong', 'FlappyBird', 'PixelCopter', 'PuckWorld', 'RaycastMaze', 'Snake', 'WaterWorld',
+             'nu_pong', 'nu_pong_2']:
     nondeterministic = False
     register(
         id='{}-v0'.format(game),
